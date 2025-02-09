@@ -4,7 +4,7 @@
 My updated Arch hyprland dotfiles!
 
 ![App Screenshot](screenshot.png)
-
+![App Screenshot](screenshot2.png)
 
 
 This is where i keep all my dotfiles for the programs i use.
