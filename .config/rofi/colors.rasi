@@ -1,0 +1,9 @@
+* {
+    font: "Hack 13";
+    background:     rgba(1,2,4, 0.7);
+    background-alt: rgba(11,19,25, 0.15);
+    foreground:     rgba(202,230,230, 1);
+    selected:       rgba(20,39,46, 0.7);
+    active:         rgba(64,149,150, 1);
+    urgent:         rgba(20,39,46, 1);
+}
