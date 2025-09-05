@@ -3,7 +3,7 @@ configuration {
     modi:                        "drun";
     show-icons:                  true;
     drun-display-format:         "{name}";
-    font:                        "JetBrainsMono Nerd Font 9";
+    font:                        "SF Pro Display 12";
 }
 
 @theme "~/.config/rofi/theme.rasi"

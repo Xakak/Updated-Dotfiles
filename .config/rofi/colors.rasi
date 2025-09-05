@@ -1,6 +1,5 @@
 * {
-    font: "Hack 13";
-    background:     rgba(1,2,4, 0.7);
+    background:     rgb(12,12,12);
     background-alt: rgba(11,19,25, 0.15);
     foreground:     rgba(202,230,230, 1);
     selected:       rgba(20,39,46, 0.7);

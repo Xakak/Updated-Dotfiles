@@ -1,35 +1,38 @@
+[cursor]
+unfocused_hollow = false
 
+[cursor.style]
+shape = "Block"
 
-general.import = ["~/.cache/wal/colors-alacritty.toml"]
-general.live_config_reload = true 
-
-
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
-
+dynamic_title = true
 opacity = 0.9
-blur=true
 
-padding.x = 15
-padding.y = 15
+[window.padding]
+x = 20
+y = 20
 
-decorations = "Full"
-decorations_theme_variant = "Dark" # "Dark"
+[colors]
+draw_bold_text_with_bright_colors = true
 
 [font]
+size = 13
 
-normal.family = "Caskaydia Cove Nerd Font Mono"
-bold.family = "Caskaydia Cove Nerd Font Mono"
-italic.family = "CodeNew Roman Nerd Font Mono"
-bold_italic.family = "CodeNew Roman Nerd Font Mono"
+[font.normal]
+family = "Monaco Nerd Font"
 
-size = 12.0
+style = "medium"
 
+[window.dimensions]
+columns = 80
+lines = 120
 
-[selection]
-save_to_clipboard = false
+[general]
+live_config_reload = true
+# import = ["~/.cache/wal/colors-alacritty.toml"]
+import = ["colors.toml"]
 
-[terminal]
-
-[terminal.shell]
-program = "/usr/bin/zsh"

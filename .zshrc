@@ -67,7 +67,7 @@ lfcd () {
 }
 
 
-ZSH_THEME="awesomepanda"
+ZSH_THEME="robbyrussell"
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
@@ -83,11 +83,10 @@ bindkey '^e' edit-command-line
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source /home/rayan/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source ~/.oh-my-zsh/custom/plugins/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source /home/rayan/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-source /home/rayan/.oh-my-zsh/custom/plugins/zsh-fzf-tab/fzf-tab.zsh
-ZSH=/usr/share/oh-my-zsh
+source /home/rayan/.oh-my-zsh/custom/plugins/fzf-tab/fzf-tab.zsh
+export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 # Created by `pipx` on 2025-02-03 12:52:38
@@ -105,5 +104,5 @@ alias ll="eza -lha --icons=auto --sort=name --group-directories-first"
 alias vim="nvim"
 
 export PATH=$PATH:/home/rayan/.spicetify
-
+export PATH="$HOME/flutter/bin:$PATH"
 export PATH=$PATH:/home/rayan/.spicetify

@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # all wallpapers array
-wallpapers=(~/Pictures/wallpapers/*)
+wallpapers=(~/Pictures/Wallpapers/*)
 
 # getting the current wallpaper with `swww query`
 current_wallpaper_path=$(swww query | sed "s/.*image: \(.*\)/\1/") 
@@ -20,7 +20,7 @@ selected_wallpaper=$(for a in $wallpapers; do
     else
         echo -en "${a:t}\0icon\x1f$a\n"
     fi
-done | rofi -dmenu -p " " -theme config-drun.rasi)
+done | rofi -dmenu -p " " -theme config-swww.rasi)
 
 # removing the added " (current)" from the selected wallpaper (no matter the item selected)
 final_wallpaper=$(echo $selected_wallpaper | sed "s/ (current)//")
@@ -28,8 +28,9 @@ wallpaper_ext=$(echo $final_wallpaper | sed "s/.*\.\(.*\)/\1/")
 
 # changing the wallpaper and the colorscheme if selected wallpaper is not empty
 if [[ $selected_wallpaper != "" ]]; then
-    wal -i ~/Pictures/wallpapers/$final_wallpaper
-
+    matugen image ~/Pictures/Wallpapers/$final_wallpaper
+    echo "\$path=$current_wallpaper_path" > ~/.config/hypr/.current_wallpaper
+ fi
 
 
 

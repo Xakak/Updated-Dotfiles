@@ -1,4 +1,8 @@
 /*****----- Configuration -----*****/
+* {
+    font: "SF Pro Text 13";
+}
+
 configuration {
 	modi:                       "drun,run,window";
     show-icons:                 true;
@@ -6,7 +10,7 @@ configuration {
     display-run:                " ";
     display-window:             " ";
     drun-display-format:        "{name}";
-    icon-theme:			"WhiteSur-dark";
+    icon-theme:			"MacTahoe-dark";
     kb-remove-to-eol: "";
     kb-mode-complete: "";
 
@@ -19,7 +23,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 @import                          "./colors.rasi"
-
+@import				 "$HOME/.local/share/rofi/themes/material-you/material-colors.rasi"
 /*****----- Main Window -----*****/
 window {
     transparency:                "real";
@@ -139,7 +143,7 @@ element selected.normal {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        32px;
+    size:                        4ch;
     cursor:                      inherit;
 }
 element-text {
